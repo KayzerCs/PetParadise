@@ -1,0 +1,475 @@
+.section2 {
+    @include childCenter;
+    flex-direction: column;
+    background: url(/asset/img/section2.jpg) center/cover;
+    height: 120vh;
+
+    @media  screen and (max-width:1000px) {
+        height: 255vh;
+    }
+
+    @media screen and (max-width:570px) {
+        height: 165vh;
+    }
+    
+    h2 {
+        @include h2;
+        font-size: 3rem;
+    }
+
+    .grid-container {
+        background: $translate;
+        backdrop-filter: blur(2px);
+        border-radius: 15px;
+        height: 90%;
+        width: 95%;
+        max-width: 1470px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 32% 32% 32%;
+        grid-template-areas: 
+        "a b c"
+        "d e f"
+        "g h i";
+
+        @media screen and (max-width:1000px) {
+         display: flex;
+         flex-direction: column;
+        }
+        
+
+        .container-product1 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-area: a;
+            position: relative;
+            @include store;
+
+            .img-grid {
+                @include childCenter;
+                
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 15px;
+                    @include img1;
+
+                    @media screen and (max-width:570px) {
+                        max-width: 150px;
+                        max-height: 135px;
+                    }
+                }
+            }
+
+            .grid-txt1 {
+                @include childCenter;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2rem;
+                    color: $green;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-style: italic;
+                    font-size: 2rem;
+                    color: $blue;
+                }
+
+                button {
+                    @include btn1;
+                }
+            }
+        }
+
+        .container-product2 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-area: b;
+            position: relative;
+            @include store;
+
+            .img-grid2 {
+                @include childCenter;
+                
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 15px;
+                    @include img1;
+
+                    @media screen and (max-width:570px) {
+                        max-width: 150px;
+                        max-height: 135px;
+                    }
+                }
+            }
+
+            .grid-txt2 {
+                @include childCenter;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2rem;
+                    color: $green;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-style: italic;
+                    font-size: 2rem;
+                    color: $blue;
+                }
+
+                button {
+                    @include btn1;
+                }
+            }
+        }
+
+        .container-product3 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-area: c;
+            position: relative;
+            @include store;
+
+            .img-grid3 {
+                @include childCenter;
+                
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 15px;
+                    @include img1;
+
+                    @media screen and (max-width:570px) {
+                        max-width: 150px;
+                        max-height: 135px;
+                    }
+                }
+            }
+
+            .grid-txt3 {
+                @include childCenter;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2rem;
+                    color: $green;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-style: italic;
+                    font-size: 2rem;
+                    color: $blue;
+                }
+
+                button {
+                    @include btn1;
+                }
+            }
+        }        
+        
+        .container-product4 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-area: d;
+            position: relative;
+            @include store;
+
+            .img-grid4 {
+                @include childCenter;
+                
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 15px;
+                    @include img1;
+
+                    @media screen and (max-width:570px) {
+                        max-width: 150px;
+                        max-height: 135px;
+                    }
+                }
+            }
+
+            .grid-txt4 {
+                @include childCenter;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2rem;
+                    color: $green;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-style: italic;
+                    font-size: 2rem;
+                    color: $blue;
+                }
+
+                button {
+                    @include btn1;
+                }
+            }
+        }
+        
+        .container-product5 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-area: e;
+            position: relative;
+            @include store;
+
+            .img-grid5 {
+                @include childCenter;
+                
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 15px;
+                    @include img1;
+
+                    @media screen and (max-width:570px) {
+                        max-width: 150px;
+                        max-height: 135px;
+                    }
+                }
+            }
+
+            .grid-txt5 {
+                @include childCenter;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2rem;
+                    color: $green;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-style: italic;
+                    font-size: 2rem;
+                    color: $blue;
+                }
+
+                button {
+                    @include btn1;
+                }
+            }
+        }
+        
+        .container-product6 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-area: f;
+            position: relative;
+            @include store;
+
+            .img-grid6 {
+                @include childCenter;
+                
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 15px;
+                    @include img1;
+
+                    @media screen and (max-width:570px) {
+                        max-width: 150px;
+                        max-height: 135px;
+                    }
+                }
+            }
+
+            .grid-txt6 {
+                @include childCenter;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2rem;
+                    color: $green;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-style: italic;
+                    font-size: 2rem;
+                    color: $blue;
+                }
+
+                button {
+                    @include btn1;
+                }
+            }
+        }
+
+        .container-product7 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-area: g;
+            position: relative;
+            @include store;
+
+            .img-grid7 {
+                @include childCenter;
+                
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 15px;
+                    @include img1;
+
+                    @media screen and (max-width:570px) {
+                        max-width: 150px;
+                        max-height: 135px;
+                    }
+                }
+            }
+
+            .grid-txt7 {
+                @include childCenter;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2rem;
+                    color: $green;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-style: italic;
+                    font-size: 2rem;
+                    color: $blue;
+                }
+
+                button {
+                    @include btn1;
+                }
+            }
+        }
+
+        .container-product8 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-area: h;
+            position: relative;
+            @include store;
+
+            .img-grid8 {
+                @include childCenter;
+                
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 15px;
+                    @include img1;
+
+                    @media screen and (max-width:570px) {
+                        max-width: 150px;
+                        max-height: 135px;
+                    }
+                }
+            }
+
+            .grid-txt8 {
+                @include childCenter;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2rem;
+                    color: $green;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-style: italic;
+                    font-size: 2rem;
+                    color: $blue;
+                }
+
+                button {
+                    @include btn1;
+                }
+            }
+        }
+
+        .container-product9 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-area: i;
+            position: relative;
+            @include store;
+
+            .img-grid9 {
+                @include childCenter;
+                
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 15px;
+                    @include img1;
+
+                    @media screen and (max-width:570px) {
+                        max-width: 150px;
+                        max-height: 135px;
+                    }
+                }
+            }
+
+            .grid-txt9 {
+                @include childCenter;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2rem;
+                    color: $green;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-style: italic;
+                    font-size: 2rem;
+                    color: $blue;
+                }
+
+                button {
+                    @include btn1;
+                }
+            }
+        }
+
+        
+    }
+}

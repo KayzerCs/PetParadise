@@ -58,6 +58,16 @@
         display: grid;
         grid-template-columns: 40% 60%;
         height: 50vh;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background: $blue;
+            bottom: 0;
+        }
 
         @media screen and (max-width: 630px) {
             display: grid;

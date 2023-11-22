@@ -40,6 +40,55 @@ $line: rgba(165, 161, 161, 0.301);
     font-weight: 550;
 }
 
+@mixin btn1 {
+    background: $green;
+    color: $white;
+    border: 2px solid $white;
+    border-radius: 25px;
+    width: 80%;
+    height: 10%;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        background: $white;
+        color: $green;
+        border: 2px solid $green;
+        transform: translateX(2px);
+    }
+
+    @media screen and (max-width:570px) {
+        height: 15%;
+    }
+}
+
+@mixin store {
+    &:after {
+        content: "";
+        position: absolute;
+        background: $line;
+        width: 2px;
+        height: 90%;            
+        left: 99%;
+        bottom: 5%;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        background: $line;
+        width: 90%;
+        height: 2px;            
+        left: 3%;
+        bottom: 0%;
+    }
+}
+
+@mixin img1 {
+    max-width: 230px;
+    max-height: 260px;
+}
+
 * {
     margin: 0;
     padding: 0;
