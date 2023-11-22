@@ -151,6 +151,11 @@ header .header-txt {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media screen and (max-width: 630px) {
+  header .header-txt {
+    height: 10vh;
+  }
+}
 @media screen and (max-width: 1100px) {
   header .header-txt {
     -webkit-box-pack: center;
@@ -236,4 +241,9 @@ header .header-txt .box-txt p:after {
 }
 header .header-txt .box-txt p:before, header .header-txt .box-txt p:after {
   font-size: 1.5rem;
+}
+
+.section1 {
+  background: red;
+  height: 100vh;
 }/*# sourceMappingURL=index.css.map */
