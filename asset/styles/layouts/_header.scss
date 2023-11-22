@@ -4,7 +4,7 @@ header {
     color: $white;
 
     nav {
-        background: rgba(173, 169, 169, 0.384);
+        background: $translate;
         height: 10vh;
         display: grid;
         grid-template-columns: 10% 15% 60% 15%;
@@ -14,8 +14,17 @@ header {
         border-radius: 150px;
         backdrop-filter: blur(8px);
 
+        @media screen and (max-width: 740px) {
+            display: grid;
+            grid-template-columns: 15% 0% 70% 15%;
+        }
+
         .logo {
             @include childCenter;
+
+            @media screen and (max-width: 430px) {
+                display: none;
+            }
 
             img {
                height: 70%;
@@ -31,6 +40,14 @@ header {
                 font-size: 2rem;
                 letter-spacing: 2px;
                 color: $green;
+
+                @media screen and (max-width: 900px) {
+                     font-size: 1.5rem;
+                }
+
+                @media screen and (max-width: 740px) {
+                    display: none;
+                }
             }
         }
 
@@ -39,9 +56,15 @@ header {
             padding: 0 20px;
             cursor: pointer;
 
+
             li {
+
                 &:hover {
                     border-bottom: 2px solid $green;
+                }
+
+                @media screen and (max-width: 430px) {
+                    display: none;
                 }
                 
             }
@@ -69,13 +92,77 @@ header {
         justify-content: flex-end;
         align-items: flex-end;
 
+        @media screen and (max-width: 1100px) {
+            justify-content: center;
+        }
+
         .box-txt {
             display: flex;
             flex-direction: column;
-            width: 35%;
-            height: 55%;
-            margin-bottom: 5%;
-            background: rgba(173, 169, 169, 0.384);
+            width: 30%;
+            height: 40%;
+            margin-bottom: 15%;
+            background: $translate;
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            justify-content: space-around;
+
+            @media screen and (max-width: 1380px) {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            @media screen and (max-width: 1100px) {
+                display: flex;
+                width: 80%;
+                height: 30%;
+                margin-bottom: 1%;
+            }
+
+            @media screen and (max-width: 630px) {
+                display: none;
+            }
+
+
+            h1 {
+                font-family: $font1;
+                color: $blue;
+                font-size: 4rem;
+                margin-top: 3%;
+
+                @media screen and (max-width: 1380px) {
+                    font-size: 3rem;
+                }
+
+                @media screen and (max-width: 700px) {
+                    font-size: 2rem;
+                }
+
+            }
+
+            p {
+                font-family: $font3;
+                letter-spacing: 2px;
+                margin: 0 1%;
+                font-size: 1rem;
+
+                @media screen and (max-width: 1380px) {
+                    font-size: 0.9rem;
+                }
+
+
+                &:before {
+                    content: "❝";
+                }
+                &:after {
+                    content: "❞";
+                }
+    
+                &:before,
+                &:after {
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 }
