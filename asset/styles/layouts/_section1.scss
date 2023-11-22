@@ -1,4 +1,92 @@
 .section1 {
-    background: red;
-    height: 100vh;
+
+    .section1-container1 {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        height: 50vh;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 18%;
+            height: 2px;
+            background: $line;
+            left: 41%;
+            bottom: 0%;
+
+            @media screen and (max-width: 630px) {
+                width: 90%;
+                left: 5%;
+            }
+        }
+
+
+        @media screen and (max-width: 630px) {
+            display: grid;
+            grid-template-columns: 100% 0%;
+        }
+
+        .section1-text-container1 {
+            @include childCenter;
+            border: 2px dashed $green;
+            margin: 5%;
+
+            p {
+                font-size: 1rem;
+                margin: 5%;
+                letter-spacing: 2px;
+                line-height: 2;
+
+                @media screen and (max-width: 400px) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .section1-img-container1 {
+           background: url(/asset/img/histoire.jpg) center/cover;
+
+           @media screen and (max-width: 630px) {
+            display: none;
+           }
+        }
+
+    }
+
+    .section1-container2 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 50vh;
+
+        @media screen and (max-width: 630px) {
+            display: grid;
+            grid-template-columns: 100% 0%;
+        }
+
+        .section1-img-container2 {
+            background: url(/asset/img/chat.jpg) center/cover;
+
+            @media screen and (max-width: 630px) {
+                display: none;
+               }
+        }
+
+        .section1-text-container2 {
+            @include childCenter;
+            border: 2px dashed $green;
+            margin: 5%;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 5%;
+            letter-spacing: 2px;
+            line-height: 2;
+
+            @media screen and (max-width: 400px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
 }

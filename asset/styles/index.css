@@ -243,7 +243,105 @@ header .header-txt .box-txt p:before, header .header-txt .box-txt p:after {
   font-size: 1.5rem;
 }
 
-.section1 {
-  background: red;
-  height: 100vh;
+.section1 .section1-container1 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 50vh;
+  position: relative;
+}
+.section1 .section1-container1:before {
+  content: "";
+  position: absolute;
+  width: 18%;
+  height: 2px;
+  background: rgba(165, 161, 161, 0.301);
+  left: 41%;
+  bottom: 0%;
+}
+@media screen and (max-width: 630px) {
+  .section1 .section1-container1:before {
+    width: 90%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .section1 .section1-container1 {
+    display: grid;
+    grid-template-columns: 100% 0%;
+  }
+}
+.section1 .section1-container1 .section1-text-container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px dashed rgb(111, 190, 20);
+  margin: 5%;
+}
+.section1 .section1-container1 .section1-text-container1 p {
+  font-size: 1rem;
+  margin: 5%;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+@media screen and (max-width: 400px) {
+  .section1 .section1-container1 .section1-text-container1 p {
+    font-size: 0.8rem;
+  }
+}
+.section1 .section1-container1 .section1-img-container1 {
+  background: url(/asset/img/histoire.jpg) center/cover;
+}
+@media screen and (max-width: 630px) {
+  .section1 .section1-container1 .section1-img-container1 {
+    display: none;
+  }
+}
+.section1 .section1-container2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 50vh;
+}
+@media screen and (max-width: 630px) {
+  .section1 .section1-container2 {
+    display: grid;
+    grid-template-columns: 100% 0%;
+  }
+}
+.section1 .section1-container2 .section1-img-container2 {
+  background: url(/asset/img/chat.jpg) center/cover;
+}
+@media screen and (max-width: 630px) {
+  .section1 .section1-container2 .section1-img-container2 {
+    display: none;
+  }
+}
+.section1 .section1-container2 .section1-text-container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px dashed rgb(111, 190, 20);
+  margin: 5%;
+}
+.section1 .section1-container2 p {
+  font-size: 1rem;
+  margin: 5%;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+@media screen and (max-width: 400px) {
+  .section1 .section1-container2 p {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=index.css.map */
